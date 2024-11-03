@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f6faff;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: none;
+    color: #333;
+}
+
+.start-free-btn {
+    background-color: #26cc8b;
+    color: white;
+}
+
+main {
+    padding-top: 120px;
+}
+
+.pricing-section {
+    text-align: center;
+    padding: 50px 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.pricing-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+
+.plans {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plan {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.plan h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.plan h3 {
+    color: #26cc8b;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    text-align: left;
+}
+
+.plan ul li {
+    margin: 10px 0;
+    color: #555;
+}
+
+.start-btn1 {
+    margin-top: 115px;
+    padding: 12px;
+    width: 100%;
+    background-color: #26cc8b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.start-btn2 {
+    margin-top: 57px;
+    padding: 12px;
+    width: 100%;
+    background-color: #26cc8b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.start-btn3 {
+    margin-top: 0px;
+    padding: 12px;
+    width: 100%;
+    background-color: #26cc8b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addons-section{
+
+    text-align: center;
+    padding: 50px 100px;
+    background-color: #f0f7ff;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.addons-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.addons-section h3 {
+    text-align: start;
+    color: #333;
+}
+.addons-section p {
+    text-align: start;
+    color: #333;
+}
+
+.addons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.addon {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+    background-color: white;
+}
+.foot{
+    text-align: center;
+    display: flex;
+    justify-content: center
+    ;
+    gap: 200px;
+    background-color: lightslategray;
+    width: 800px;
+    margin-left: 350px;
+    padding: 20px;    
+
+
+}
+.foot h1{
+    flex-wrap: wrap;
+    width: 400px;
+}
+.foot button{
+    height: 40px;
+    background-color: #26cc8b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+.footer{
+    margin-top: 100px;
+    display: flex;
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+    background-color: black;
+    color: white;
+}
+.icon{
+    display: none;
+}
+@media screen and (max-width:730px){
+    body{
+        width: 430px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }    
+    nav{
+        display: none;
+    }
+    .header-buttons{
+        display: none;
+    }
+    .header{
+        width: 430px;
+        gap: 0;
+    }
+    .icon{
+        display: block;
+        
+    }
+    .header-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 0;
+        width: 430px;
+    }
+    .pricing-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .plans{
+        display: flex;
+        flex-direction: column;
+        width: 390px;
+        padding: 0;
+        margin-left: -60px;
+    }
+    .addon{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .foot{
+        width: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 0px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .top{
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        justify-content: start;
+    }
+    .main{
+        padding: 10px;
+        width: 430px;
+    }
+    .addons-section{
+        padding: 20px;
+    }
+    .price{
+        font-size: 30px;
+    }
+}
